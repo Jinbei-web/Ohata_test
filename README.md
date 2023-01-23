@@ -10,12 +10,16 @@ JINBEI WEB搭載用の推論API
  ・~/dict/test_data/120class_model.pkl
  ・~/dict/test_data/LabelEncoder_120class.pickle
  ・~/dict/test_data/smoothing_ref_data_20221216.pickle
+ 
+ 
 【使い方】
 from jinbei_MLAPI_V1_2 import ApplyData #推論のクラス
 from jinbei_MLAPI_V1_2 import jinbei_index #J指標算出の関数
+
 #推論
 appleid_data = ApplyData(shutuba_table_df[DF], last_info_df[DF], past_calc_map[DF], race_class_df[DF])
 appleid_data.predict_120class(output_count_120class = 10)
+
 ([‘1-2-3’,
   ‘1-3-2’,
   ‘1-4-3’,
@@ -36,7 +40,9 @@ appleid_data.predict_120class(output_count_120class = 10)
   0.8577304700966253,
   0.7722237598778535,
   0.6847221126848473])
+  
 #J指標の算出<>
 jinbei_index(shutuba_table_df[DF],  past_calc_map[DF], date[str]<例；“2022-12-18”>)
+
 array([98.5925135 , 86.43388291, 90.95085493, 97.94283453, 79.66665971,
        98.90538408])
