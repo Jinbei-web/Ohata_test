@@ -4,13 +4,13 @@
 
 ・環境のコピー pip install -r requirements.txt
 
-・下記の関連ファイルを設置．（これらのファイル群は，重すぎるため，別途共有）
+・下記の関連ファイルを設置．（これらのファイル群は，重すぎるため，gdriveで共有[https://drive.google.com/drive/folders/1j8HZP2HVINoTHIZQ1ud5JKOLBET95SXJ?usp=sharing]）
 
-　・~/dict/test_data/120class_model.pkl
+　・./model_data/test_data/120class_model.pkl
 
-　・~/dict/test_data/LabelEncoder_120class.pickle
+　・./model_data/LabelEncoder_120class.pickle
 
-　・~/dict/test_data/smoothing_ref_data_20221216.pickle
+　・./model_data/smoothing_ref_data_20221216.pickle
 
 ## <使い方> 
 
