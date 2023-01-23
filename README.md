@@ -1,5 +1,5 @@
 MLAPI
-
+kkk
 JINBEI WEB搭載用の推論API
 
 <動かすのに必要な手順> 
